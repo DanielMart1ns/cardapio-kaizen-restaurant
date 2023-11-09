@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Great+Vibes&display=swap');
+
+:root{
+    --fonte_texto: 'Bungee Hairline', 'cursive';
+    --fonte_cursiva: 'Great Vibes', sans-serif;
+    --cor1: #710606;
+    --cor2: #e48b0634;
+}
+
+/*Header*/
+
+#cabecalho{
+    background-color: var(--cor1);
+    padding: 10px 20px 10px 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.282);
+
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#cabecalho h1{
+    font-family: var(--fonte_cursiva);
+    font-size: 2.6em;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-link{
+    font-family: var(--fonte_texto);
+    font-weight: bolder;
+    font-size: .9em;
+    color: white;
+}
+
+.nav-link.active{
+    background-color: var(--cor2) !important;
+}
+
+.navbar-link:focus{
+    background-color: var(--cor2);
+}
+
+.nav-link:hover{
+    color: #e48b06fa;
+    background-color: var(--cor2);
+}
+
+#menu-hamburger{
+    background-color: #e48b06fa;
+    color: var(--cor2);
+}
+
+/*Carousel*/
+
+body{
+    background-color: var(--cor2);
+}
+
+h2{
+    margin: 30px 0;
+    font-family: var(--fonte_cursiva);
+    font-weight: bolder;
+    border-bottom: 2px solid #710606;
+}
+
+#titulo-cardapio{
+    text-align: center;
+    font-family: var(--fonte_cursiva);
+    font-weight: bolder;
+    margin: 30px auto;
+    width: 300px;
+
+}
+
+#meus-slides{
+    z-index: 0;
+}
+
+.carousel.slide{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.carousel.slide img{
+    border-radius: 10px;
+    width: 900px;
+}
+
+/*grid*/
+
+.produtos{
+    padding-top: 100px;
+}
+
+.row{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #e48b0634;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+/*Cards*/
+
+.card img{
+    height: 400px;
+}
+
+.card-body{
+    margin-top: 5px;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: rgba(144, 96, 25, 0.756);
+    color: white;
+}
+
+.btn:hover{
+    background-color: var(--cor1);
+    color: white;
+}

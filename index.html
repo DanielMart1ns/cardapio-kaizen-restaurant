@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Kaizen Restaurant</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="desktops.css">
+    <link rel="stylesheet" href="tablets.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-expand-md">
+            <div class="container">
+                <h1>Kaizen Restaurant</h1>
+                <button id="menu-hamburger" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#pratos-da-casa" class="nav-link">Pratos da Casa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobremesas" class="nav-link">Sobremesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bebidas" class="nav-link">Bebidas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="titulo-cardapio">Cardápio</h2>
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="meus-slides">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/sashimi.jpg" alt="sashimi">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/sobremesa.jpg" alt="bolo doce">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bebidas.jpg" alt="bebidas">
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#meus-slides" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#meus-slides" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#meus-slides" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <h2 id="pratos-da-casa" class="produtos">Pratos da Casa</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <header class="card-header">
+                            <h3>Pratos da Casa</h3>
+                        </header>
+                        <img src="images/carnes.jpg" alt="carnes">
+                        <div class="card-body">
+                            <h4>Carnes</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-2">
+                        <header class="card-header">
+                            <h3>Pratos da Casa</h3>
+                        </header>
+                        <img src="images/frutos-do-mar.jpg" alt="frutos do mar">
+                        <div class="card-body">
+                            <h4>Frutos do Mar</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-3">
+                        <header class="card-header">
+                            <h3>Pratos da Casa</h3>
+                        </header>
+                        <img src="images/veganos.jpg" alt="pratos veganos">
+                        <div class="card-body">
+                            <h4>Pratos Veganos</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="sobremesas" class="produtos">Sobremesas</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <header class="card-header">
+                            <h3>Sobremesas</h3>
+                        </header>
+                        <img src="images/sorvetes.jpg" alt="sorvetes">
+                        <div class="card-body">
+                            <h4>Sorvetes</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-2">
+                        <header class="card-header">
+                            <h3>Sobremesas</h3>
+                        </header>
+                        <img src="images/bolos.jpg" alt="bolos">
+                        <div class="card-body">
+                            <h4>Bolos</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-3">
+                        <header class="card-header">
+                            <h3>Sobremesas</h3>
+                        </header>
+                        <img src="images/panquecas.jpg" alt="panquecas">
+                        <div class="card-body">
+                            <h4>Panquecas Doces</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="bebidas" class="produtos">Bebidas</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <header class="card-header">
+                            <h3>Bebidas</h3>
+                        </header>
+                        <img src="images/alcoolicas.jpg" alt="bebidas alcoólicas">
+                        <div class="card-body">
+                            <h4>Bebidas Álcoolicas</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-2">
+                        <header class="card-header">
+                            <h3>Bebidas</h3>
+                        </header>
+                        <img src="images/naturais.jpg" alt="Bebidas Naturais">
+                        <div class="card-body">
+                            <h4>Bebidas Naturais</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card img-3">
+                        <header class="card-header">
+                            <h3>Bebidas</h3>
+                        </header>
+                        <img src="images/cafes.jpg" alt="cafés">
+                        <div class="card-body">
+                            <h4>Cafés</h4>
+                            <button class="btn">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
